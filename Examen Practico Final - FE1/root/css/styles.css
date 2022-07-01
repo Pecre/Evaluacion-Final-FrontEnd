@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;900&display=swap');
+
+/*Styles Mobile */
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width: 375px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 45px;
+    flex-direction: row-reverse;
+}
+
+/*MENU HAMBURGUESA PRUEBA - POSITIVA*/
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #F3603B;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+#menu {
+    display: none;
+}
+
+
+
+
+/*MENU HAMBURGUESA PRUEBA*/
+
+.imagen-vector {
+    background-image: url('/root/imagenes/bg-tablet-pattern.png');
+    background-repeat: no-repeat;
+    background-position: left 60px top -80px;
+    background-size: 450px;
+}
+
+#resize {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cuadros {
+    width: 100%;
+    height: 100%;
+}
+
+.textos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.textos1 {
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    font-weight: 100;
+    color: #B3B2B7;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 35px;
+    color: rgb(29, 30, 37);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #F3603B;
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    width: 140px;
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 12px 15px -2px rgba(243, 96, 59, 0.31);
+    box-shadow: 0px 12px 15px -2px rgba(243, 96, 59, 0.31);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+#title2 {
+    font-weight: 550;
+    font-size: 33px;
+    color: rgb (29, 30, 37);
+    line-height: 50px;
+}
+
+.bottom-list {
+    position: relative;
+}
+
+.button-list {
+    width: 70px;
+    box-shadow: none;
+    margin-bottom: 50px;
+    position: absolute;
+    height: 40px;
+    padding-right: 63px;
+    display: flex;
+    justify-content: center;
+}
+
+.pruebaaa {
+    background-color: #F3613C;
+    color: white;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    right: 290px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-01 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    width: 300px;
+}
+
+#title-02 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    width: 300px;
+}
+
+.fixed-width {
+    width: 375px;
+}
+
+.title-list {
+    margin-top: 20px;
+    background-color: rgb(245, 223, 223);
+    padding: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-left: 55px;
+    width: 375px;
+    padding-right: 0%;
+}
+
+#title-03 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    width: 300px;
+}
+
+.main-list {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 40px;
+}
+
+#list-02 {
+    margin-left: 20px;
+    padding-left: 50px;
+    left: 100px;
+
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.profile-picture {
+    height: 80px;
+}
+
+#profile-card {
+    margin-top: 50px;
+
+}
+
+.profile-conteiner {
+    margin-top: 50px;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    margin-bottom: -140px
+}
+
+.prueba {
+    background-color: #FAFAFA;
+    margin-top: 100px;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 17px;
+}
+
+.dot {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+    border: solid 1px #F3613C;
+}
+
+#dot-orange {
+    background-color: #F3613C;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#second-button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bottom-orange {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #F3613C;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+
+#third-button {
+    background-color: white;
+    color: #F3613C;
+    font-weight: 400px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#updates {
+    border-radius: 38px;
+    margin-top: 25px;
+    text-align: center;
+    width: 220px;
+}
+
+#fourth-button {
+    width: 100px;
+    margin-top: 25px;
+    box-shadow: none;
+}
+
+footer {
+    background-color: rgb(29, 30, 37);
+}
+
+.footer-list {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.first-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+#second-list {
+    margin-right: 20px;
+    line-height: 40px
+}
+
+.iconos {
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.logo-footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: rgb(143, 148, 167);
+    margin-top: 30px;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.style-icons {
+    color: white;
+}
+
+.main-menu {
+    display: none;
+}
+
+.header-button-desktop {
+    display: none;
+}
+
+.profile-desktop-02 {
+    display: none;
+}
+
+.profile-desktop-03 {
+    display: none;
+}
+
+.copyright-desktop {
+    display: none;
+}
+
+.third-button-desktop {
+    display: none;
+}
+
+/*Styles Mobile */
+
+
+@media (min-width:1440px) {
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    footer {
+        width: 100vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 50px;
+    }
+
+    .menu-desktop {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        align-items: flex-end;
+    }
+
+    .main-menu-desktop {
+        color: black;
+    }
+
+    .header-button-desktop {
+        width: 148px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+
+    .cuadros {
+        width: 35%;
+    }
+
+    /*Styles Main Desktop */
+
+    .first-section {
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .text-desktop-first-section {
+        display: flex;
+        flex-direction: column;
+        order: -1;
+        margin-top: 50px;
+        justify-content: flex-start;
+    }
+
+    #subtext-first-section {
+        justify-content: flex-start;
+        text-align: start;
+        color: rgb(29, 30, 37);
+        font-weight: 500;
+    }
+
+    #title {
+        text-align: start;
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    #button-desktop-first-section {
+        justify-content: flex-start;
+    }
+
+    .textos1 {
+        font-size: 20px;
+    }
+
+    .second-section {
+        display: flex;
+        justify-content: space-around;
+        text-align: start;
+        margin-top: 150px;
+    }
+
+    .text-desktop-second-section {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        text-align: start;
+    }
+
+    #title2 {
+        text-align: left;
+
+    }
+
+    .bottom-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pruebaaa {
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 0px;
+        right: 500px;
+        justify-content: center;
+    }
+
+    .title-list {
+        justify-content: flex-start;
+        margin: 0px;
+        background-color: white;
+        padding: 0%;
+    }
+
+    .fixed-width {
+        width: 500px;
+    }
+
+    /* Solucionar arriba problema botones 01 // SOLUCIONADO */
+
+    .profile-desktop {
+        width: 600px;
+    }
+
+    #profile-title-1 {
+        color: white;
+    }
+
+    .profile-desktop-02 {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    .profile-desktop-03 {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    #profile-title-3 {
+        color: white;
+    }
+
+    .profiles {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Textos1-desktop {
+        background-color:
+    }
+
+    .dots {
+        display: none;
+    }
+
+    /* styles footer Desktop */
+
+    .bottom-text {
+        display: flex;
+        font-size: 50px;
+        width: 700px;
+        text-align: start;
+
+    }
+
+    .br {
+        display: none;
+    }
+
+    #third-button {
+        display: none;
+    }
+
+    .bottom-orange {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 180px;
+        margin-top: 200px;
+    }
+
+    .third-button-desktop {
+        background-color: white;
+        color: #F3613C;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-list {
+        display: flex;
+        gap: 100px;
+    }
+
+    .copyright {
+        display: none;
+        margin-top: 0px;
+    }
+
+    .copyright-desktop {
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    .footer-icons-desktop {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+
+    .form-desktop {
+        gap: 1000px;
+    }
+
+    .iconos {
+        gap: 15px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    /* Hoover */
+
+    a:hover {
+        color: #F3613C;
+        cursor: pointer;
+    }
+
+
+    button:hover {
+        cursor: pointer;
+        background-color: #e98168;
+        transition: 1s ease-in-out;
+        background: #b3462b;
+        opacity: 1;
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388;
+
+    }
+
+    .third-button-desktop:hover {
+        background-color: rgb(189, 179, 166);
+    }
+
+}
